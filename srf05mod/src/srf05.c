@@ -1,5 +1,5 @@
 /*
- * Basic Linux Kernel module using GPIO interrupts.
+ * Linux Kernel module for accessing SRF05 ultrasonic range finder. 
  *
  * Author:
  * 	Stefan Wendler (devnull@kaltpost.de)

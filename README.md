@@ -4,9 +4,11 @@ SRF05 Ultrasonic Sensor Kernel Module and Web Service
 sw@kaltpost.de
 
 This project provides a kernel module and a web service to access the 
-[SRF05 ultra sonic range finder|http://www.robot-electronics.co.uk/htm/srf05tech.htm] from a Linux based device. 
+[SRF05 ultra sonic range finder] (http://www.robot-electronics.co.uk/htm/srf05tech.htm) from a Linux based device. 
 I use this to measure the water level in my cistern. As a Linux box, I use the in-expensive 
-[TP-Link MR3020|http://www.tp-link.com/lk/products/details/?model=TL-MR3020] box with [OpenWrt|http://openwrt.org].
+[TP-Link MR3020] (http://www.tp-link.com/lk/products/details/?model=TL-MR3020) box with [OpenWrt] (http://openwrt.org).
+
+The web service uses the excellent [mongoose] (https://code.google.com/p/mongoose/) as a foundation.
 
 
 Project Directory Layout
@@ -27,8 +29,9 @@ Prerequisites
 
 To compile this project the following is needed: 
 
-* OpenWrt checked out and compiled for your target (see [this instructions|http://wiki.openwrt.org/doc/howto/buildroot.exigence] })
-* A freed GPIO on the target hardware (TP-Link MR3020). E.g. [use 7 or 29|http://wiki.openwrt.org/toh/tp-link/tl-mr3020#gpios]. 
+* OpenWrt checked out and compiled for your target (see [this instructions] (http://wiki.openwrt.org/doc/howto/buildroot.exigence) )
+* A freed GPIO on the target hardware (TP-Link MR3020). E.g. [use 7 or 29] (http://wiki.openwrt.org/toh/tp-link/tl-mr3020#gpios). 
+* The SRF05 needs to be wired for MODE 2 (shared trigger/data line)
 
 
 Compilation
