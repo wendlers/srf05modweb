@@ -93,3 +93,8 @@ To access the current sensor values as well as a 24h history, navigate to the fo
 
 	http://<your-device-id>/
 
+The sensor values are also accesible through `sysfs`
+
+	/sys/kernel/srf05/distance_cm
+	/sys/kernel/srf05/distance_raw
+	/sys/kernel/srf05/distance_status
